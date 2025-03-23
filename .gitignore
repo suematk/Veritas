@@ -2,11 +2,11 @@
 
 # Ignore files within logs but keep folder
 logs/*
-!logs/
+!logs/.gitkeep
 
 # Ignore all files within reports
 reports/*
-!reports/
+!reports/.gitkeep
 
 # Ignore pycache
-*/pycache
+*/__pycache__
