@@ -1,0 +1,9 @@
+{
+    "col_names_query" : "SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE table_schema='{schema}' and table_name = '{table}';",
+    "num_rows_query" : "SELECT COUNT(*) FROM {table_name};",
+    "datatype_query" : "SELECT data_type FROM information_schema.columns WHERE table_name ='{table}' AND column_name='{col_name}';",
+    "num_null_query" : "SELECT COUNT(*) FROM {table_name} WHERE {col_name} IS NULL;",
+    "num_non_null_query" : "SELECT COUNT(*) FROM {table_name} WHERE {col_name} IS NOT NULL;",
+    "num_unique_query" : "SELECT COUNT(DISTINCT {col_name}) FROM {table_name};",
+    "top_query" : "SELECT val FROM (SELECT {col_name} AS val, DENSE_RANK() OVER(ORDER BY COUNT({col_name}) DESC) AS res FROM {table_name} GROUP BY {col_name}) WHERE res=1;"
+}
