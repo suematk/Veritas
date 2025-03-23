@@ -1,0 +1,12 @@
+.env
+
+# Ignore files within logs but keep folder
+logs/*
+!logs/
+
+# Ignore all files within reports
+reports/*
+!reports/
+
+# Ignore pycache
+*/pycache
