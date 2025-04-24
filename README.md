@@ -34,7 +34,7 @@ By automating the comparison and validation of data, Veritas helps you quickly d
 ## Usage
 1. Clone the repository into your local environment:
 ```bash
-git clone https://github.com/your-username/Veritas.git
+git clone https://github.com/suematk/Veritas.git
 ```
 
 2. Navigate to the directory and run the main.py script either through the CLI or through your IDE
